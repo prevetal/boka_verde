@@ -1,0 +1,741 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 60px;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    #menu
+    {
+        padding-block: var(--block_offset_half);
+    }
+
+
+    #menu .close_btn
+    {
+        right: var(--block_offset_half);
+    }
+
+
+    #menu .nav
+    {
+        font-size: 26px;
+
+        width: 400px;
+
+        gap: 24px;
+    }
+
+
+    #menu .cont > .row
+    {
+        width: calc(50% + 220px);
+    }
+
+
+    #menu .info
+    {
+        width: 360px;
+
+        gap: 40px;
+    }
+
+
+    #menu .contacts .messengers .icon
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    #menu .contacts .phone
+    {
+        font-size: 32px;
+    }
+
+
+    #menu .location
+    {
+        gap: 20px;
+    }
+
+
+    #menu .bottom
+    {
+        margin-top: var(--block_offset_half);
+        padding-top: 24px;
+    }
+
+
+    #menu .links
+    {
+        font-size: 16px;
+    }
+
+
+
+    #menu .image
+    {
+        width: calc(50% - 300px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .image
+    {
+        top: 123px;
+        right: 0;
+
+        width: calc(50% - 20px);
+        margin-right: 0;
+        padding-top: 60px;
+        padding-right: 69px;
+    }
+
+
+    .page_head .image:before
+    {
+        right: 69px;
+
+        width: 450px;
+        height: 12px;
+        margin-top: 9px;
+    }
+
+
+    .page_head .image:after
+    {
+        width: 60px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 108px;
+        line-height: 1;
+    }
+
+
+    .first_section.step2 .title
+    {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+
+    .first_section.step2 .sub_title
+    {
+        font-size: 108px;
+        line-height: 1;
+
+        margin-top: 16px;
+    }
+
+
+    .first_section .arrow_down
+    {
+        right: var(--cont_padding);
+        bottom: var(--cont_padding);
+
+        width: 48px;
+        height: 48px;
+        margin: 0;
+    }
+
+
+
+    /*--------------------
+        Second section
+    --------------------*/
+    .second_section .head .title
+    {
+        font-size: 52px;
+    }
+
+
+    .second_section .head .cont
+    {
+        padding-block: var(--block_offset_half);
+    }
+
+
+    .second_section .images .image1
+    {
+        width: 300px;
+        height: 500px;
+        padding-top: 80px;
+    }
+
+
+    .second_section .images .image1:before
+    {
+        width: 260px;
+        height: 60px;
+    }
+
+
+    .second_section .images .image2
+    {
+        width: 372px;
+        height: 500px;
+    }
+
+
+    .second_section .images .image3
+    {
+        width: calc(100% - 720px);
+        height: 460px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+    }
+
+
+    .second_section .images .image3:before
+    {
+        width: 60px;
+        height: calc(100% - 50px);
+    }
+
+
+    .second_section .images .image3:after
+    {
+        width: calc(100% - 80px);
+        height: 30px;
+    }
+
+
+    .second_section .words
+    {
+        font-size: 68px;
+        line-height: 148px;
+    }
+
+
+    .animation.step1 .first_section .sub_title
+    {
+        font-size: 108px;
+        line-height: 1;
+    }
+
+
+    .animation.step3 .second_section .head .cont
+    {
+        height: 149px;
+    }
+
+
+    .animation.step4 .second_section
+    {
+        transform: translateY(-30px);
+    }
+
+
+    .animation.step4 .second_section .words
+    {
+        transform: translateX(-636px);
+    }
+
+
+    .second_section .words > *:nth-child(1),
+    .animation.step4 .second_section .words > *:nth-child(2),
+    .animation.step5 .second_section .words > *:nth-child(3)
+    {
+        font-size: 108px;
+    }
+
+
+    .animation.step5 .second_section
+    {
+        transform: translateY(-60px);
+    }
+
+
+    .animation.step5 .second_section .words
+    {
+        transform: translateX(-1616px);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_block
+    {
+        min-height: 0;
+    }
+
+
+    .about_block .item
+    {
+        padding-left: 110px;
+    }
+
+
+    .about_block .item .val
+    {
+        font-size: 140px;
+        line-height: 100px;
+    }
+
+
+    .about_block .item .label
+    {
+        font-size: 28px;
+        line-height: 56px;
+    }
+
+
+
+    /*--------------
+        Included
+    --------------*/
+    .included .head .title
+    {
+        font-size: 52px;
+    }
+
+
+
+    .included .data .val
+    {
+        font-size: 112px;
+        line-height: 1;
+
+        width: 480px;
+    }
+
+
+    .included .data .label
+    {
+        font-size: 28px;
+
+        width: 480px;
+    }
+
+
+    .included .image
+    {
+        right: 0;
+        bottom: 42px;
+
+        width: calc(50% + 40px);
+        margin-right: 0;
+
+        border-width: 40px;
+    }
+
+
+    .included .arrow_down
+    {
+        bottom: var(--block_offset_half);
+        left: var(--cont_padding);
+
+        width: 48px;
+        height: 48px;
+        margin-left: 0;
+    }
+
+
+    .included .section:nth-child(2n) .arrow_down
+    {
+        right: var(--cont_padding);
+
+        margin-right: 0;
+    }
+
+
+    .included .section:nth-child(2n) .image
+    {
+        left: 0;
+
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page:after
+    {
+        width: var(--cont_padding);
+        height: calc(100% - 48px);
+    }
+
+
+    .error_page .cont
+    {
+        min-height: 650px;
+
+        padding-block: var(--block_offset);
+    }
+
+
+    .error_page .data
+    {
+        width: 480px;
+        margin-bottom: 0;
+    }
+
+
+    .error_page .code
+    {
+        font-size: 120px;
+    }
+
+
+    .error_page .image
+    {
+        width: 688px;
+
+        padding-inline: 48px;
+    }
+
+
+
+    /*-----------------
+        Credit info
+    -----------------*/
+    .credit_info .text_block
+    {
+        width: calc(50% - 48px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .cont
+    {
+        align-content: stretch;
+        align-items: stretch;
+    }
+
+
+    .contacts_info .data
+    {
+        width: calc(50% - 40px);
+    }
+
+
+    .contacts_info .map
+    {
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .contacts_info .image
+    {
+        align-self: auto;
+
+        width: calc(50% + 40px);
+        padding: 40px 40px 0;
+    }
+
+
+    .contacts_info .image img
+    {
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+
+    /*-------------------
+        Location info
+    -------------------*/
+    .location_info:after
+    {
+        right: 0;
+
+        width: var(--cont_padding);
+        margin-right: 0;
+    }
+
+
+    .location_info .data
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .location_info .text_block
+    {
+        gap: 48px;
+    }
+
+
+    .location_info .bottom
+    {
+        padding-block: var(--block_offset);
+    }
+
+
+    .location_info .items
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .location_info .map
+    {
+        left: calc(50% + 20px);
+
+        width: calc(50% - 20px);
+        margin-left: 0;
+
+        border-width: 24px;
+    }
+
+
+
+    /*------------------------
+        Advantages project
+    ------------------------*/
+    .advantages_project .row > *:nth-child(1)
+    {
+        width: calc(50% - 72px);
+    }
+
+
+    .advantages_project .row > *:nth-child(2)
+    {
+        width: calc(50% + 50px);
+    }
+
+
+    .advantages_project .col
+    {
+        gap: 20px;
+    }
+
+
+    .advantages_project .item1:after
+    {
+        width: 420px;
+        height: 16px;
+        margin-bottom: 20px;
+    }
+
+
+    .advantages_project .item2
+    {
+        margin-bottom: 80px;
+        margin-left: 40px;
+    }
+
+    .advantages_project .item2:after
+    {
+        width: 400px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+
+    .advantages_project .item3
+    {
+        margin-right: 50px;
+    }
+
+    .advantages_project .item3:after
+    {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+
+    .advantages_project .item4
+    {
+        margin-right: 200px;
+    }
+
+    .advantages_project .item4:after
+    {
+        width: 24px;
+        margin-left: 20px;
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project .item:nth-child(2n+1) .thumb:after,
+    .about_project .item:nth-child(2n+2) .thumb:after
+    {
+        width: 240px;
+        height: 16px;
+    }
+
+
+    .about_project .item .thumb
+    {
+        width: 420px;
+        height: 420px;
+    }
+
+
+    .about_project .item .thumb + *
+    {
+        width: calc(100% - 460px);
+        margin-bottom: -4px;
+    }
+
+
+    .about_project .item .val
+    {
+        font-size: 128px;
+        line-height: 1;
+    }
+
+
+    .about_project .item .val + *
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*--------------------
+        Infrastructure
+    --------------------*/
+    .infrastructure .item
+    {
+        font-size: 24px;
+    }
+
+
+    .infrastructure .row > *
+    {
+        width: 280px;
+    }
+
+
+    .infrastructure .item:nth-child(4n+1) .thumb:before
+    {
+        width: 240px;
+        height: 16px;
+    }
+
+    .infrastructure .item:nth-child(4n+2) .thumb:before
+    {
+        width: 16px;
+        height: 240px;
+    }
+
+    .infrastructure .item:nth-child(4n+3) .thumb:before
+    {
+        width: 180px;
+        height: 16px;
+    }
+
+    .infrastructure .item:nth-child(4n+4) .thumb:before
+    {
+        width: 16px;
+        height: 180px;
+    }
+
+
+
+    /*-----------
+        Flats
+    -----------*/
+    .flats .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*--------------
+        Parkings
+    --------------*/
+    .parkings .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*---------------------
+        Favorites empty
+    ---------------------*/
+    .favorites_empty
+    {
+        min-height: 650px;
+    }
+
+
+    .favorites_empty .image
+    {
+        top: 40px;
+        right: 30px;
+        left: auto;
+
+        height: calc(100% - 72px);
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Flat info
+    ---------------*/
+    .flat_info .data
+    {
+        width: calc(50% + 40px);
+    }
+
+
+    .flat_info .features > *
+    {
+        width: calc(33.333% - 5px);
+    }
+
+
+    .flat_info .images
+    {
+        width: calc(50% - 40px);
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+
+    /*-------------
+        Genplan
+    -------------*/
+    .genplan .info
+    {
+        bottom: 140px;
+        left: var(--cont_padding);
+
+        width: 340px;
+        margin-left: 0;
+    }
+
+
+    .genplan .bottom
+    {
+        bottom: var(--cont_padding);
+    }
+}

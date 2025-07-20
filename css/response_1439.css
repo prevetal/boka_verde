@@ -1,0 +1,593 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 48px;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    #menu .close_btn
+    {
+        top: 24px;
+        right: 24px;
+    }
+
+
+    #menu .nav
+    {
+        font-size: 22px;
+
+        gap: 20px;
+    }
+
+
+    #menu .cont > .row
+    {
+        width: calc(50% + 200px);
+    }
+
+
+    #menu .info
+    {
+        width: 340px;
+    }
+
+
+    #menu .contacts .phone
+    {
+        font-size: 28px;
+    }
+
+
+
+    #menu .image
+    {
+        width: calc(50% - 260px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .image
+    {
+        width: calc(50% - 61px);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 88px;
+    }
+
+
+    .first_section .arrow_down
+    {
+        bottom: var(--block_offset_half);
+
+        width: 40px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+
+
+    .first_section .arrow_down .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    .animation.step1 .first_section .title
+    {
+        font-size: 42px;
+        line-height: 57px;
+    }
+
+
+    .animation.step1 .first_section .sub_title
+    {
+        font-size: 88px;
+        line-height: 1;
+
+        padding-top: 12px;
+    }
+
+
+
+    /*--------------------
+        Second section
+    --------------------*/
+    .second_section .head .title
+    {
+        font-size: 42px;
+        line-height: 57px;
+    }
+
+
+    .second_section .images .image1
+    {
+        width: 220px;
+        height: 360px;
+        padding-top: 60px;
+    }
+
+
+    .second_section .images .image1:before
+    {
+        width: 200px;
+        height: 40px;
+    }
+
+
+    .second_section .images .image2
+    {
+        width: 260px;
+        height: 360px;
+    }
+
+
+    .second_section .images .image3
+    {
+        width: calc(100% - 528px);
+        height: 320px;
+        padding-right: 60px;
+        padding-bottom: 40px;
+    }
+
+
+    .second_section .images .image3:before
+    {
+        width: 40px;
+        height: calc(100% - 40px);
+    }
+
+
+    .second_section .images .image3:after
+    {
+        width: calc(100% - 60px);
+        height: 20px;
+    }
+
+
+    .second_section .words
+    {
+        font-size: 56px;
+        line-height: 92px;
+    }
+
+
+    .second_section .words > * + *
+    {
+        margin-left: 56px;
+    }
+
+
+    .animation.step3 .second_section .head .cont
+    {
+        height: 137px;
+    }
+
+
+    .animation.step4 .second_section
+    {
+        transform: translateY(-24px);
+    }
+
+
+    .animation.step4 .second_section .words
+    {
+        transform: translateX(-512px);
+    }
+
+
+    .second_section .words > *:nth-child(1),
+    .animation.step4 .second_section .words > *:nth-child(2),
+    .animation.step5 .second_section .words > *:nth-child(3)
+    {
+        font-size: 88px;
+    }
+
+
+    .animation.step5 .second_section
+    {
+        transform: translateY(-48px);
+    }
+
+
+    .animation.step5 .second_section .words
+    {
+        transform: translateX(-1308px);
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_block .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .about_block .item .val
+    {
+        font-size: 128px;
+        line-height: 1;
+    }
+
+
+    .about_block .item .label
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+
+
+    /*--------------
+        Included
+    --------------*/
+    .included .head .title
+    {
+        font-size: 42px;
+        line-height: 57px;
+    }
+
+
+
+    .included .data .val
+    {
+        font-size: 108px;
+    }
+
+
+    .included .data .label
+    {
+        font-size: 24px;
+    }
+
+
+    .included .image
+    {
+        bottom: var(--block_offset_half);
+
+        height: calc(100% - var(--block_offset));
+    }
+
+
+    .included .arrow_down
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .included .arrow_down .icon
+    {
+        display: block;
+
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .cont
+    {
+        min-height: 0;
+    }
+
+
+    .error_page .data
+    {
+        width: 440px;
+    }
+
+
+    .error_page .code
+    {
+        font-size: 108px;
+    }
+
+
+    .error_page .image
+    {
+        width: 50%;
+    }
+
+
+
+    /*-----------------
+        Credit info
+    -----------------*/
+    .credit_info .text_block
+    {
+        width: calc(50% + 14px);
+    }
+
+
+    .credit_info .banks .item
+    {
+        height: 100px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .label
+    {
+        font-size: 16px;
+    }
+
+
+    .contacts_info .address,
+    .contacts_info .phone
+    {
+        font-size: 24px;
+    }
+
+
+    .contacts_info .image
+    {
+        padding: var(--cont_padding) var(--cont_padding) 0;
+    }
+
+
+
+    /*------------------------
+        Advantages project
+    ------------------------*/
+    .advantages_project .row > *:nth-child(1)
+    {
+        width: calc(50% - 48px);
+    }
+
+
+    .advantages_project .row > *:nth-child(2)
+    {
+        width: calc(50% + 26px);
+    }
+
+
+    .advantages_project .item1 .thumb img
+    {
+        min-height: 308px;
+
+        object-fit: cover;
+    }
+
+    .advantages_project .item2 .thumb img
+    {
+        min-height: 428px;
+
+        object-fit: cover;
+    }
+
+    .advantages_project .item3 .thumb img
+    {
+        min-height: 411px;
+
+        object-fit: cover;
+    }
+
+    .advantages_project .item4 .thumb img
+    {
+        min-height: 466px;
+
+        object-fit: cover;
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project .item .thumb
+    {
+        width: 360px;
+        height: 360px;
+    }
+
+
+    .about_project .item .thumb + *
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .about_project .item .val + *
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------------
+        Infrastructure
+    --------------------*/
+    .infrastructure .item
+    {
+        font-size: 22px;
+    }
+
+
+    .infrastructure .row > *
+    {
+        width: 268px;
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*-----------
+        Flats
+    -----------*/
+    .flats .flat .price
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*--------------------
+        Developer info
+    --------------------*/
+    .developer_info .item
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*--------------
+        Parkings
+    --------------*/
+    .parkings .item .btn
+    {
+        font-size: 16px;
+        font-weight: 500;
+
+        padding: 9px 28px;
+    }
+
+
+
+    .parkings .list .item .location
+    {
+        width: calc(100% - 772px);
+    }
+
+
+    .parkings .list .item .bottom
+    {
+        width: 560px;
+    }
+
+
+    .parkings .list .item .favorite_btn
+    {
+        right: 320px;
+    }
+
+
+
+    /*---------------
+        Flat info
+    ---------------*/
+    .flat_info .data
+    {
+        width: calc(50% + 93px);
+    }
+
+
+    .flat_info .images
+    {
+        width: calc(50% - 117px);
+    }
+
+
+
+    /*------------------
+        Genplan item
+    ------------------*/
+    .genplan_item .data
+    {
+        width: 800px;
+    }
+
+
+
+    /*-------------
+        Genplan
+    -------------*/
+    .genplan .info
+    {
+        bottom: 120px;
+
+        width: 320px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        width: calc(100% + var(--cont_padding_half));
+        margin-bottom: 28px;
+        margin-left: calc(var(--cont_padding_half) * -1);
+
+        gap: 0;
+    }
+
+
+    footer .menu > *
+    {
+        width: calc(14.285% - var(--cont_padding_half));
+        margin-bottom: 12px;
+        margin-left: var(--cont_padding_half);
+    }
+
+
+
+    footer .contacts
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    footer .contacts .address br
+    {
+        display: block;
+    }
+
+
+    footer .contacts .socials
+    {
+        margin-left: calc(var(--cont_padding_half) * -1);
+    }
+
+
+    footer .contacts .btn
+    {
+        margin-left: 0;
+    }
+
+
+
+    footer .links
+    {
+        gap: var(--cont_padding);
+    }
+}

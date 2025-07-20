@@ -1,0 +1,640 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 24px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*----------
+        Menu
+    ----------*/
+    #menu .nav
+    {
+        width: 320px;
+    }
+
+
+    #menu .cont > .row
+    {
+        width: calc(50% + 180px);
+    }
+
+
+    #menu .info
+    {
+        width: 280px;
+    }
+
+
+    #menu .contacts .phone
+    {
+        font-size: 24px;
+    }
+
+
+    #menu .contacts .messengers
+    {
+        gap: 12px;
+    }
+
+
+    #menu .location .address
+    {
+        font-size: 20px;
+    }
+
+
+    #menu .links
+    {
+        font-size: 14px;
+    }
+
+
+
+    #menu .image
+    {
+        width: calc(50% - 204px);
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .btn_wrap
+    {
+        margin-top: 40px;
+    }
+
+
+    .page_head .row .text_block
+    {
+        margin-top: 40px;
+    }
+
+
+    .page_head .developer_logo
+    {
+        margin-top: 40px;
+    }
+
+
+    .page_head .developer_logo img
+    {
+        width: 180px;
+        height: 40px;
+    }
+
+
+    .page_head .image
+    {
+        position: relative;
+        top: 0;
+
+        width: calc(100% - var(--cont_padding));
+        margin-top: -36px;
+        margin-bottom: -52%;
+        margin-left: auto;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .title
+    {
+        font-size: 68px;
+    }
+
+
+
+    .animation.step1 .first_section .title
+    {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+
+    .animation.step1 .first_section .sub_title
+    {
+        font-size: 68px;
+    }
+
+
+
+    /*--------------------
+        Second section
+    --------------------*/
+    .second_section .head .title
+    {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+
+
+    /*--------------
+        Included
+    --------------*/
+    .included .head .title
+    {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+
+    .included .section
+    {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 0;
+
+        padding-block: var(--block_offset_half) var(--block_offset);
+        gap: var(--cont_padding);
+    }
+
+
+    .included .section:before
+    {
+        display: none;
+    }
+
+
+    .included .cont
+    {
+        order: 2;
+    }
+
+
+    .included .data
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .included .data .val
+    {
+        font-size: 128px;
+
+        width: 100%;
+    }
+
+
+    .included .data .label
+    {
+        font-size: 32px;
+
+        width: 100%;
+    }
+
+
+    .included .image,
+    .included .section:nth-child(2n) .image
+    {
+        position: relative;
+        bottom: 0;
+
+        width: calc(100% - var(--cont_padding) * 2);
+        height: auto;
+        margin: 0 auto;
+
+        border-width: var(--cont_padding);
+    }
+
+
+    .included .arrow_down
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .data
+    {
+        width: 400px;
+    }
+
+
+    .error_page .code
+    {
+        font-size: 92px;
+    }
+
+
+    .error_page .title
+    {
+        font-size: calc(var(--font_size_title) - 4px);
+    }
+
+
+    .error_page .image
+    {
+        padding-inline: 40px;
+    }
+
+
+
+    /*-----------------
+        Credit info
+    -----------------*/
+    .credit_info
+    {
+        padding-top: 50%;
+    }
+
+
+    .credit_info .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info:after
+    {
+        width: 48px;
+    }
+
+
+
+    /*------------------------
+        Advantages project
+    ------------------------*/
+    .advantages_project .row > *:nth-child(1),
+    .advantages_project .row > *:nth-child(2)
+    {
+        width: 100%;
+    }
+
+
+    .advantages_project .row > *:nth-child(2)
+    {
+        margin-top: 0;
+    }
+
+
+    .advantages_project .item2
+    {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .advantages_project .item2:after
+    {
+        display: none;
+    }
+
+
+    .advantages_project .item3
+    {
+        margin-right: 0;
+    }
+
+    .advantages_project .item3:after
+    {
+        display: none;
+    }
+
+
+    .advantages_project .item4
+    {
+        margin-right: 0;
+        margin-bottom: 83px;
+    }
+
+
+
+    .advantages_project .item4:after
+    {
+        top: 100%;
+        right: 0;
+        left: auto;
+
+        width: 476px;
+        max-width: 80%;
+        height: 63px;
+        margin-top: 20px;
+
+        background: #e2df7c;
+    }
+
+
+    .advantages_project .item .name
+    {
+        padding: 40px;
+    }
+
+
+    .advantages_project .item1 .thumb img,
+    .advantages_project .item2 .thumb img,
+    .advantages_project .item3 .thumb img,
+    .advantages_project .item4 .thumb img
+    {
+        height: 308px;
+        min-height: 0;
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project .item .thumb
+    {
+        width: 288px;
+        height: 288px;
+    }
+
+
+    .about_project .item .thumb + *
+    {
+        width: calc(100% - 312px);
+        margin-bottom: -8px;
+    }
+
+
+    .about_project .item .val
+    {
+        font-size: 100px;
+    }
+
+
+    .about_project .item .val + *
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*--------------------
+        Infrastructure
+    --------------------*/
+    .infrastructure .item
+    {
+        font-size: 28px;
+    }
+
+
+    .infrastructure .row
+    {
+        margin-bottom: calc(var(--block_offset) * -1);
+        margin-left: calc(var(--block_offset) * -1);
+    }
+
+
+    .infrastructure .row > *
+    {
+        width: calc(50% - var(--block_offset));
+        max-width: calc(50% - var(--block_offset));
+        margin-bottom: var(--block_offset);
+        margin-left: var(--block_offset);
+    }
+
+
+
+    /*-----------
+        Flats
+    -----------*/
+    .flats .head .filter
+    {
+        width: 100%;
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .flats .head .clear_filter_btn
+    {
+        margin-left: 0;
+    }
+
+
+    .flats .head .count
+    {
+        margin-left: auto;
+    }
+
+
+
+    .flats .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .flats .flat
+    {
+        padding: 20px;
+    }
+
+
+    .flats .flat .thumb
+    {
+        height: 240px;
+    }
+
+
+
+    .flats .list .flat
+    {
+        padding: 23px 87px 23px 23px;
+
+        gap: 24px;
+    }
+
+
+    .flats .list .flat .favorite_btn
+    {
+        right: 23px;
+    }
+
+
+
+    /*--------------------
+        Developer info
+    --------------------*/
+    .developer_info .item
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .developer_info .item .logo
+    {
+        height: 64px;
+    }
+
+
+
+    /*--------------
+        Parkings
+    --------------*/
+    .parkings .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .parkings .item
+    {
+        padding-block: 23px;
+        padding-inline: 23px;
+        gap: 12px;
+    }
+
+
+
+    .parkings .list .item
+    {
+        padding: 23px;
+
+        gap: 24px;
+    }
+
+
+    .parkings .list .item .location
+    {
+        width: calc(100% - 660px);
+    }
+
+
+    .parkings .list .item .bottom
+    {
+        width: 480px;
+    }
+
+
+    .parkings .list .item .favorite_btn
+    {
+        right: 240px;
+    }
+
+
+
+    /*---------------
+        Flat info
+    ---------------*/
+    .flat_info .data
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .flat_info .features > *
+    {
+        width: calc(25% - 5px);
+    }
+
+
+    .flat_info .images
+    {
+        width: 100%;
+        margin-bottom: var(--block_offset_half);
+    }
+
+
+
+    /*------------------
+        Genplan item
+    ------------------*/
+    .genplan_item .floors
+    {
+        flex-direction: row;
+
+        margin-top: var(--block_offset_half);
+    }
+
+
+    .genplan_item .compass
+    {
+        align-self: flex-end;
+    }
+
+
+    .genplan_item .data
+    {
+        order: 3;
+
+        width: 100%;
+        margin-top: var(--block_offset);
+    }
+
+
+    .genplan_item .features
+    {
+        order: 2;
+
+        margin-top: var(--block_offset_half);
+        padding: 0;
+    }
+
+
+
+    /*-------------
+        Genplan
+    -------------*/
+    .genplan .info
+    {
+        bottom: 100px;
+
+        width: 300px;
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        width: 170px;
+        height: 28px;
+    }
+
+
+    footer .menu > *
+    {
+        width: calc(16.666% - var(--cont_padding_half));
+    }
+
+
+    footer .sponsor .image img
+    {
+        width: 180px;
+        height: 40px;
+    }
+
+
+    footer .contacts
+    {
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: var(--block_offset_half);
+    }
+}
