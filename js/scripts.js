@@ -263,6 +263,55 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('body').toggleClass('lock')
 		$('.filter').toggleClass('show')
 	})
+
+
+	// Prealoder
+	$('.preloader .logo').addClass('animate')
+
+	setTimeout(() => $('.preloader').hide(), 2000)
+
+
+	// Animate images
+	const boxes = document.querySelectorAll('.included .image')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.intersectionRatio >= 0.2 && !entry.target.classList.contains('animated')) {
+				entry.target.classList.add('animated')
+			}
+		}
+	}
+
+	const observer = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	boxes.forEach(element => observer.observe(element))
+
+
+	// First section
+	$('.first_section .arrow_down').click(function(e) {
+		e.preventDefault()
+
+		handleScroll('down')
+	})
+
+
+	// Included
+	$('.included .arrow_down').click(function(e) {
+		e.preventDefault()
+
+		const currentBlock = $(this).closest('.section')
+
+		const nextEl = currentBlock.next()
+
+		if (nextEl.length) {
+			nextEl[0].scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			})
+		}
+	})
 })
 
 
@@ -301,7 +350,7 @@ function handleScroll(direction) {
 
 			animationStep--
 
-			setTimeout(() => wheelHandled = false, 500)
+			setTimeout(() => wheelHandled = false, 750)
 		}
 	}
 }
@@ -355,7 +404,7 @@ function onTouchEnd(event) {
 	const touchEndY = event.changedTouches[0].clientY,
 		deltaY = touchStartY - touchEndY
 
-	if (Math.abs(deltaY) > 40) {
+	if (Math.abs(deltaY) > 30) {
 		const direction = deltaY > 0 ? 'down' : 'up'
 
 		handleScroll(direction)

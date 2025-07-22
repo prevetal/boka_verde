@@ -23,6 +23,29 @@
 
 
 
+    /*---------------
+        Preloader
+    ---------------*/
+    .preloader .logo
+    {
+        padding-bottom: var(--cont_padding);
+    }
+
+
+    .preloader .logo:after
+    {
+        height: 4px;
+    }
+
+
+    .preloader .logo img
+    {
+        width: 170px;
+        height: 28px;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -65,9 +88,9 @@
 
     #menu .nav
     {
-        font-size: 22px;
-
         padding-bottom: var(--block_offset);
+
+        font-size: 22px;
 
         gap: 24px;
     }
@@ -255,10 +278,10 @@
 
     .animation.step1 .first_section .sub_title
     {
+        padding-top: 0;
+
         font-size: 32px;
         line-height: 48px;
-
-        padding-top: 0;
     }
 
 
@@ -535,9 +558,8 @@
 
         width: calc(100% + var(--cont_padding) * 2);
         height: auto;
-        padding: 40px var(--cont_padding) 0;
-
         margin-inline: calc(var(--cont_padding) * -1);
+        padding: 40px var(--cont_padding) 0;
     }
 
 
@@ -602,9 +624,9 @@
 
     .advantages_project .item .name
     {
-        font-size: 22px;
-
         padding: 24px;
+
+        font-size: 22px;
     }
 
 
@@ -762,9 +784,9 @@
 
     .flats .head .back a
     {
-        font-size: 14px;
-
         padding: 5px 16px;
+
+        font-size: 14px;
     }
 
 
@@ -955,11 +977,11 @@
 
     .parkings .no_need_btn
     {
-        font-size: 14px;
-        font-weight: 500;
-
         margin-left: auto;
         padding: 5px 20px;
+
+        font-size: 14px;
+        font-weight: 500;
 
         text-decoration: none;
     }
