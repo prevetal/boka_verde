@@ -408,10 +408,20 @@ window.addEventListener('scroll', function () {
 
 
 
+let lastWheelTime = 0
+const WHEEL_THROTTLE_MS = 750
+
+
 function onWheel(event) {
+	const now = Date.now()
+
+	if (now - lastWheelTime < WHEEL_THROTTLE_MS) return
+
 	const direction = event.deltaY > 0 ? 'down' : 'up'
 
 	handleScroll(direction)
+
+	lastWheelTime = now
 }
 
 
