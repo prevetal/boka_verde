@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	// Animate images
-	const boxes = document.querySelectorAll('.included .image')
+	const boxes = document.querySelectorAll('.img_animate')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
@@ -311,6 +311,14 @@ document.addEventListener('DOMContentLoaded', function() {
 				block: 'start'
 			})
 		}
+	})
+
+
+	// Genpaln
+	$('.genplan .image svg path').click(function(e) {
+		e.preventDefault()
+
+		window.location.href = $(this).data('link')
 	})
 })
 
@@ -384,6 +392,18 @@ window.addEventListener('resize', function () {
 			fakeResize2 = true
 		}
 	}
+})
+
+
+window.addEventListener('scroll', function () {
+	//
+	const scrollY = window.scrollY,
+		speed = 0.25,
+		offset = -scrollY * speed
+
+    const element = document.querySelector('.infrastructure .bg')
+
+    element.style.transform = `translateY(${offset + element.offsetHeight}px)`
 })
 
 
