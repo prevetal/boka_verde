@@ -5605,6 +5605,15 @@ header .langs a
 }
 
 
+.genplan .image svg
+{
+    position: absolute;
+    z-index: 2;
+
+    inset: 0;
+}
+
+
 .genplan .image svg path
 {
     cursor: pointer;
