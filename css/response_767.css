@@ -1098,12 +1098,6 @@
     /*------------------
         Genplan item
     ------------------*/
-    .genplan .mob_info
-    {
-        display: flex;
-    }
-
-
     .genplan_item .features > *
     {
         width: calc(50% - 5px);
@@ -1123,6 +1117,18 @@
         bottom: 80px;
 
         width: 260px;
+    }
+
+
+    .genplan .mob_info
+    {
+        display: flex;
+    }
+
+
+    .genplan .bottom .btn
+    {
+        width: 100%;
     }
 
 

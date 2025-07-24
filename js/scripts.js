@@ -314,11 +314,35 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
-	// Genpaln
+	// Genplan
+	$('.genplan .image svg path').mouseover(function(e) {
+		e.preventDefault()
+
+		$('.genplan #info' + $(this).data('info-id')).addClass('show')
+	})
+
+
+	$('.genplan .image svg path').mouseleave(function(e) {
+		e.preventDefault()
+
+		$('.genplan .info').removeClass('show')
+	})
+
+
 	$('.genplan .image svg path').click(function(e) {
 		e.preventDefault()
 
 		window.location.href = $(this).data('link')
+	})
+
+
+	const genplanImage = document.querySelector('.genplan .image'),
+		genplanMobInfo = document.querySelector('.genplan .mob_info')
+
+	genplanImage.addEventListener('scroll', () => {
+		genplanImage.scrollLeft > 0
+			? genplanMobInfo.classList.add('hide')
+			: genplanMobInfo.classList.remove('hide')
 	})
 })
 
@@ -396,7 +420,7 @@ window.addEventListener('resize', function () {
 
 
 window.addEventListener('scroll', function () {
-	//
+	// Infrastructure
 	const scrollY = window.scrollY,
 		speed = 0.25,
 		offset = -scrollY * speed
