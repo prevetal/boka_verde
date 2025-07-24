@@ -454,6 +454,22 @@ function onTouchStart(event) {
 }
 
 
+function onTouchMove(event) {
+    const currentY = event.touches[0].clientY,
+		moveDeltaY = lastTouchMoveY - currentY
+
+    const threshold = 40
+
+    if (Math.abs(moveDeltaY) > threshold) {
+        const direction = moveDeltaY > 0 ? 'down' : 'up'
+
+        handleScroll(direction)
+
+        lastTouchMoveY = currentY
+    }
+}
+
+
 function onTouchEnd(event) {
 	const touchEndY = event.changedTouches[0].clientY,
 		deltaY = touchStartY - touchEndY
@@ -470,3 +486,4 @@ function onTouchEnd(event) {
 window.addEventListener('wheel', onWheel, { passive: true })
 window.addEventListener('touchstart', onTouchStart, { passive: true })
 window.addEventListener('touchend', onTouchEnd, { passive: true })
+window.addEventListener('touchmove', onTouchMove, { passive: true })

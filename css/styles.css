@@ -18,8 +18,6 @@
 
 html
 {
-    touch-action: pan-y;
-    touch-action: manipulation;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -31,8 +29,6 @@ body
 {
     margin: 0;
 
-    touch-action: pan-y;
-    touch-action: manipulation;
     overscroll-behavior: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch;
