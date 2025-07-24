@@ -29,6 +29,7 @@ body
 {
     margin: 0;
 
+    -webkit-overflow-scrolling: touch;
     overscroll-behavior: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch;
@@ -387,6 +388,10 @@ button
 
 .load_more .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 8px 39px;
 
     font-size: 16px;
@@ -401,10 +406,41 @@ button
 }
 
 
+.load_more .btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.load_more .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
 .load_more .btn:hover
 {
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+.load_more .btn:hover:before
+{
+    width: 100%;
 }
 
 
@@ -615,7 +651,10 @@ header .logo img
 
 header .choose_link
 {
+    position: relative;
+
     display: inline-block;
+    overflow: hidden;
 
     padding: 8px 39px;
 
@@ -633,10 +672,41 @@ header .choose_link
 }
 
 
+header .choose_link:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
+header .choose_link span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 header .choose_link:hover
 {
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+header .choose_link:hover:before
+{
+    width: 100%;
 }
 
 
@@ -1217,6 +1287,10 @@ header .langs a
 
 .page_head .btn_wrap .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 9px 40px;
 
     font-size: 16px;
@@ -1230,10 +1304,41 @@ header .langs a
 }
 
 
+.page_head .btn_wrap .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--accent_color);
+}
+
+
+.page_head .btn_wrap .btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 .page_head .btn_wrap .btn:hover
 {
     color: var(--light_color);
-    background: var(--accent_color);
+}
+
+
+.page_head .btn_wrap .btn:hover:before
+{
+    width: 100%;
 }
 
 
@@ -2977,6 +3082,10 @@ header .langs a
 
 .contacts_info .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 9px 40px;
 
     font-size: 16px;
@@ -2990,10 +3099,41 @@ header .langs a
 }
 
 
+.contacts_info .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--accent_color);
+}
+
+
+.contacts_info .btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 .contacts_info .btn:hover
 {
     color: var(--light_color);
-    background: var(--accent_color);
+}
+
+
+.contacts_info .btn:hover:before
+{
+    width: 100%;
 }
 
 
@@ -3023,11 +3163,20 @@ header .langs a
 }
 
 
+.contacts_info .image > *
+{
+    height: 100%;
+}
+
+
 .contacts_info .image img
 {
     display: block;
 
     width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 
@@ -3861,7 +4010,10 @@ header .langs a
 
 .photo_gallery_info .back a
 {
+    position: relative;
+
     display: flex;
+    overflow: hidden;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -3884,6 +4036,13 @@ header .langs a
 }
 
 
+.photo_gallery_info .back a > *
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 .photo_gallery_info .back .icon
 {
     display: block;
@@ -3893,10 +4052,36 @@ header .langs a
 }
 
 
+.photo_gallery_info .back a:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
 .photo_gallery_info .back a:hover
 {
+    text-decoration: none;
+
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+.photo_gallery_info .back a:hover:before
+{
+    width: 100%;
 }
 
 
@@ -3961,7 +4146,10 @@ header .langs a
 
 .flats .head .back a
 {
+    position: relative;
+
     display: flex;
+    overflow: hidden;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -3984,6 +4172,13 @@ header .langs a
 }
 
 
+.flats .head .back a > *
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 .flats .head .back .icon
 {
     display: block;
@@ -3993,10 +4188,34 @@ header .langs a
 }
 
 
+.flats .head .back a:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
 .flats .head .back a:hover
 {
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+.flats .head .back a:hover:before
+{
+    width: 100%;
 }
 
 
@@ -4507,7 +4726,10 @@ header .langs a
 
 .favorites_empty .link a
 {
+    position: relative;
+
     display: inline-block;
+    overflow: hidden;
 
     padding: 8px 39px;
 
@@ -4526,10 +4748,41 @@ header .langs a
 }
 
 
+.favorites_empty .link a:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--accent_color);
+}
+
+
+.favorites_empty .link a span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 .favorites_empty .link a:hover
 {
     color: var(--light_color);
-    background: var(--accent_color);
+}
+
+
+.favorites_empty .link a:hover:before
+{
+    width: 100%;
 }
 
 
@@ -4675,6 +4928,10 @@ header .langs a
 
 .parkings .no_need_btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 8px 39px;
 
     font-size: 16px;
@@ -4692,12 +4949,43 @@ header .langs a
 }
 
 
+.parkings .no_need_btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.parkings .no_need_btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
 .parkings .no_need_btn:hover
 {
     text-decoration: none;
 
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+.parkings .no_need_btn:hover:before
+{
+    width: 100%;
 }
 
 
@@ -4945,20 +5233,47 @@ header .langs a
     padding-block: calc(var(--cont_padding_half) - 1px) 35px;
     padding-inline: calc(var(--cont_padding_half) - 1px);
 
-    transition: border-color .2s linear;
     text-decoration: none;
 
     color: currentColor;
-    border: 1px solid var(--dark_color);
-    background: var(--light_color);
 
     gap: 8px;
+}
+
+
+.parkings .item > *
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+.parkings .item:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: .2s linear;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    border: 1px solid var(--dark_color);
+    background: var(--light_color);
 }
 
 
 .parkings .item .favorite_btn
 {
     position: absolute;
+    z-index: 3;
     top: 19px;
     right: 19px;
 
@@ -5075,6 +5390,10 @@ header .langs a
 
 .parkings .item .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 8px 39px;
 
     font-size: 16px;
@@ -5089,15 +5408,48 @@ header .langs a
 }
 
 
-.parkings .item .btn:hover
+.parkings .item .btn span
 {
-    color: var(--dark_color);
+    position: relative;
+    z-index: 2;
+}
+
+
+.parkings .item .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
     background: var(--light_color);
 }
 
 
-.parkings .item:hover
+.parkings .item .btn:hover
 {
+    color: var(--dark_color);
+}
+
+
+.parkings .item .btn:hover:before
+{
+    width: 100%;
+}
+
+
+.parkings .item:hover:before
+{
+    height: calc(100% + 14px);
+
     border-color: var(--accent_color);
 }
 
@@ -5767,6 +6119,10 @@ header .langs a
 
 .genplan .bottom .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     padding: 8px 39px;
 
     font-size: 16px;
@@ -5782,10 +6138,41 @@ header .langs a
 }
 
 
+.genplan .bottom .btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
+.genplan .bottom .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--light_color);
+}
+
+
 .genplan .bottom .btn:hover
 {
     color: var(--dark_color);
-    background: var(--light_color);
+}
+
+
+.genplan .bottom .btn:hover:before
+{
+    width: 100%;
 }
 
 
@@ -6375,6 +6762,10 @@ footer .contacts .socials .icon
 
 footer .contacts .btn
 {
+    position: relative;
+
+    overflow: hidden;
+
     margin-top: 41px;
     margin-left: -7px;
     padding: 9px 40px;
@@ -6390,10 +6781,41 @@ footer .contacts .btn
 }
 
 
+footer .contacts .btn:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: width .2s linear;
+
+    background: var(--accent_color);
+}
+
+
+footer .contacts .btn span
+{
+    position: relative;
+    z-index: 2;
+}
+
+
 footer .contacts .btn:hover
 {
     color: var(--light_color);
-    background: var(--accent_color);
+}
+
+
+footer .contacts .btn:hover:before
+{
+    width: 100%;
 }
 
 

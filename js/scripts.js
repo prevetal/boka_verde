@@ -339,11 +339,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	const genplanImage = document.querySelector('.genplan .image'),
 		genplanMobInfo = document.querySelector('.genplan .mob_info')
 
-	genplanImage.addEventListener('scroll', () => {
-		genplanImage.scrollLeft > 0
-			? genplanMobInfo.classList.add('hide')
-			: genplanMobInfo.classList.remove('hide')
-	})
+	if (genplanImage && genplanMobInfo) {
+		genplanImage.addEventListener('scroll', () => {
+			genplanImage.scrollLeft > 0
+				? genplanMobInfo.classList.add('hide')
+				: genplanMobInfo.classList.remove('hide')
+		})
+	}
 })
 
 
@@ -358,7 +360,7 @@ function handleScroll(direction) {
 
 		if (!atTop || wheelHandled) return
 
-		if (direction === 'down' && animationStep <= 4) {
+		if (direction === 'down' && animationStep <= 5) {
 			wheelHandled = true
 			animationStep++
 
@@ -437,47 +439,37 @@ const WHEEL_THROTTLE_MS = 750
 
 
 function onWheel(event) {
-	const now = Date.now()
+	if (WW > 1279) {
+		const now = Date.now()
 
-	if (now - lastWheelTime < WHEEL_THROTTLE_MS) return
+		if (now - lastWheelTime < WHEEL_THROTTLE_MS) return
 
-	const direction = event.deltaY > 0 ? 'down' : 'up'
+		const direction = event.deltaY > 0 ? 'down' : 'up'
 
-	handleScroll(direction)
+		handleScroll(direction)
 
-	lastWheelTime = now
+		lastWheelTime = now
+	}
 }
 
 
 function onTouchStart(event) {
-	touchStartY = event.touches[0].clientY
-}
-
-
-function onTouchMove(event) {
-    const currentY = event.touches[0].clientY,
-		moveDeltaY = lastTouchMoveY - currentY
-
-    const threshold = 40
-
-    if (Math.abs(moveDeltaY) > threshold) {
-        const direction = moveDeltaY > 0 ? 'down' : 'up'
-
-        handleScroll(direction)
-
-        lastTouchMoveY = currentY
-    }
+	if (WW > 1279) {
+		touchStartY = event.touches[0].clientY
+	}
 }
 
 
 function onTouchEnd(event) {
-	const touchEndY = event.changedTouches[0].clientY,
-		deltaY = touchStartY - touchEndY
+	if (WW > 1279) {
+		const touchEndY = event.changedTouches[0].clientY,
+			deltaY = touchStartY - touchEndY
 
-	if (Math.abs(deltaY) > 30) {
-		const direction = deltaY > 0 ? 'down' : 'up'
+		if (Math.abs(deltaY) > 30) {
+			const direction = deltaY > 0 ? 'down' : 'up'
 
-		handleScroll(direction)
+			handleScroll(direction)
+		}
 	}
 }
 
@@ -486,4 +478,3 @@ function onTouchEnd(event) {
 window.addEventListener('wheel', onWheel, { passive: true })
 window.addEventListener('touchstart', onTouchStart, { passive: true })
 window.addEventListener('touchend', onTouchEnd, { passive: true })
-window.addEventListener('touchmove', onTouchMove, { passive: true })

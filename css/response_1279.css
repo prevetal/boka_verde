@@ -17,6 +17,12 @@
     }
 
 
+    .wrap.animate
+    {
+        height: auto;
+    }
+
+
 
     /*----------
         Menu
@@ -122,16 +128,22 @@
 
 
 
-    .animation.step1 .first_section .title
+    .first_section .title
     {
         font-size: 40px;
         line-height: 56px;
     }
 
 
-    .animation.step1 .first_section .sub_title
+    .first_section .sub_title
     {
         font-size: 68px;
+    }
+
+
+    .first_section .arrow_down
+    {
+        pointer-events: none;
     }
 
 
@@ -139,6 +151,22 @@
     /*--------------------
         Second section
     --------------------*/
+    .second_section
+    {
+        position: relative;
+
+        min-height: 0;
+
+        transform: none;
+    }
+
+
+    .second_section .head .cont
+    {
+        height: auto;
+    }
+
+
     .second_section .head .title
     {
         font-size: 40px;
@@ -163,8 +191,8 @@
         flex-direction: column;
 
         min-height: 0;
-
         padding-block: var(--block_offset_half) var(--block_offset);
+
         gap: var(--cont_padding);
     }
 
@@ -191,17 +219,17 @@
 
     .included .data .val
     {
-        font-size: 128px;
-
         width: 100%;
+
+        font-size: 128px;
     }
 
 
     .included .data .label
     {
-        font-size: 32px;
-
         width: 100%;
+
+        font-size: 32px;
     }
 
 
@@ -501,6 +529,7 @@
     {
         padding-block: 23px;
         padding-inline: 23px;
+
         gap: 12px;
     }
 
