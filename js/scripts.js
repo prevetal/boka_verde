@@ -297,6 +297,14 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 
+	// Second section
+	$('.second_section .clickable').click(function(e) {
+		e.preventDefault()
+
+		$('.animation').addClass($(this).data('step'))
+	})
+
+
 	// Included
 	$('.included .arrow_down').click(function(e) {
 		e.preventDefault()
