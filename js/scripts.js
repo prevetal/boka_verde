@@ -437,7 +437,9 @@ window.addEventListener('scroll', function () {
 
     const element = document.querySelector('.infrastructure .bg')
 
-    element.style.transform = `translateY(${offset + element.offsetHeight}px)`
+	if (element) {
+		element.style.transform = `translateY(${offset + element.offsetHeight}px)`
+	}
 })
 
 
